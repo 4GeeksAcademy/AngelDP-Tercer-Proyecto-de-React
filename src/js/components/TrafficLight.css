@@ -1,0 +1,45 @@
+.myTrafficLight {
+    background-color: rgb(133, 92, 5);
+    width: 300px;
+    height: 800px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.colorRed {
+    border-radius: 50%;
+    width: 80%;
+    height: 30%;
+    background-color: red;
+    margin: auto;
+    border: 1px solid black;
+}
+
+.colorYellow {
+    border-radius: 50%;
+    width: 80%;
+    height: 30%;
+    background-color: rgb(247, 211, 8);
+    margin: auto;
+    border: 1px solid black;
+}
+
+.colorGreen {
+    border-radius: 50%;
+    width: 80%;
+    height: 30%;
+    background-color: rgb(31, 172, 13);
+    margin: auto;
+    border: 1px solid black;
+}
+
+.on {
+    box-shadow: 0 0 20px 5px white;
+}
+
+
