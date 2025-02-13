@@ -4,12 +4,13 @@ import './TrafficLight.css';
 const TrafficLight = (props) => {
 
     
+
     return (
 
         <div className=''>
             <div className='myTrafficLight'>
                 <div 
-                    className={`colorRed ${props.color === 'red' ? 'on' : ''}`}
+                    className={`colorRed ${props.color === 'red' ? 'on' : ''} ${props.color === "purple" ? 'purple' : ''}`}
                     onClick={() => props.colorChange('red')}
                 ></div>
                 <div 

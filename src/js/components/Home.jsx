@@ -10,6 +10,10 @@ const Home = () => {
 		setColor(newColor);
 	};
 
+	const colorPurple = () => {
+		setColor("purple")
+	}
+
 	const buttonColor = () => {
 
 		switch(color){
@@ -26,7 +30,6 @@ const Home = () => {
 				setColor("red")
 				break;
 		}
-
 	}
 
 	return (
@@ -34,7 +37,6 @@ const Home = () => {
 		<div className="d-flex justify-content-center">
 
 			<TrafficLight 
-				
 				color={color}
 				colorChange={colorChange}
 			/>
@@ -43,8 +45,10 @@ const Home = () => {
 				<button type="button" className="btn btn-primary" onClick={buttonColor}>
 					Change Color
 				</button>
+				<button type="button" className="btn btn-primary" onClick={colorPurple}>
+					Change Color Purple
+				</button>
 			</div>
-			
 			
 		</div>
 		
